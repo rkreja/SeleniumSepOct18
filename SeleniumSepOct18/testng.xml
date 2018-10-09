@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.automationpractice.registration.RegistrationTests"/>
+      <class name="net.timeandtraning.DemoImplicitWaitWithSuperClass2"/>
+      <class name="net.timeandtraning.DemoExplicitAndImplicitWait"/>
+      <class name="net.timeandtraning.TestNGAnnocationDemo"/>
+      <class name="net.timeandtraning.DemoImplicitWaitWithSuperClass"/>
+      <class name="com.automationpractice.other.OtherTests"/>
+      <class name="net.timeandtraning.FindElementsDemo"/>
+      <class name="net.timeandtraning.ProfileTests"/>
+      <class name="com.automationpractice.purchase.PurchaseTests"/>
+      <class name="com.automationpractice.login.LoginTests"/>
+      <class name="net.timeandtraning.DriverSwitchDemo"/>
+      <class name="net.timeandtraning.GetAttDemo"/>
+      <class name="net.timeandtraning.TestNGDemo"/>
+      <class name="net.timeandtraning.DeleteMe"/>
+      <class name="net.timeandtraning.ActionsClassDemo"/>
+      <class name="net.timeandtraning.JavaScriptExecutorDemo"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

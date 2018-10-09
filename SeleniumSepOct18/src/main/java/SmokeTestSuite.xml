@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke Test Suite">
+	<test name="Testing major features">
+		
+		<classes>
+				<class name="com.automationpractice.login.LoginTests">
+					<methods>
+					<include name="Login_with_valid_userid_and_password"></include>
+					</methods>
+				</class>
+				
+				<class name="com.automationpractice.registration.RegistrationTests">
+				<methods>
+				<include name="Register_a_new_account_in_automationpractice_com"></include>
+				</methods>
+				</class>
+				
+				
+				<class name="com.automationpractice.other.OtherTests">
+				<methods>
+				<include name="Send_message_with_order_reference_using_contact_us_form"></include>
+				</methods>
+				</class>
+				
+		</classes>
+		
+		
+	</test>
+</suite>
+

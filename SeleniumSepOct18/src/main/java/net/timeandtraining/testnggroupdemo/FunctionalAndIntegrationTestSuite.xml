@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Functional tests only">
+<test name="tests with chrome browser">
+	<groups>
+		<run>
+		<include name="functionalTest"></include>
+		<include name="integrationTest"></include>
+		</run>
+	</groups>
+	
+	<classes>
+	<class name="net.timeandtraining.testnggroupdemo.MyAppTests"></class>
+	</classes>
+	
+	
+</test>
+</suite>
+

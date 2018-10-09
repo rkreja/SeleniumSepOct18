@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression Test Suite">
+	<test name="Tests with chrome borwser">
+		<packages>
+		
+		<package name="com.automationpractice.*"></package>
+		
+		<!-- 
+		<package name="com.automationpractice.login"></package>
+		<package name="com.automationpractice.other"></package>
+		<package name="com.automationpractice.purchase"></package>
+		<package name="com.automationpractice.registration"></package>
+		 -->
+		</packages>
+	</test>
+</suite>
+

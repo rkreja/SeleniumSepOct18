@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Login Test Suite">
+	<test name="Tests with chrome borwser">
+	
+	<parameter name="browser" value="chrome"></parameter>
+		
+	<parameter name="validuserid" value="abc213@mailinator.com"></parameter>
+	<parameter name="validpassword" value="abc1234"></parameter>
+	
+		<packages>
+		
+		<package name="com.automationpractice.login"></package>
+		
+		</packages>
+	</test>
+	
+	
+	
+	<test name="Tests with internet explorer borwser">
+	
+	<parameter name="browser" value="internetexplorer"></parameter>
+		
+	<parameter name="validuserid" value="abc213@mailinator.com"></parameter>
+	<parameter name="validpassword" value="abc1234"></parameter>
+	
+		<packages>
+		
+		<package name="com.automationpractice.login"></package>
+		
+		</packages>
+	</test>
+	
+	
+</suite>
+
