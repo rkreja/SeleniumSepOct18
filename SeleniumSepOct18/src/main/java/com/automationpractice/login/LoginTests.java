@@ -10,7 +10,7 @@ import com.automationpractice.framework.UI;
 public class LoginTests extends TestBase{
 	
 	
-    @Test
+   @Test(testName="Login with invalid userid and password",description="detail description")
  	public void Login_with_invalid_userid_with_ui() {
     	
     	UI ui = new UI(driver);

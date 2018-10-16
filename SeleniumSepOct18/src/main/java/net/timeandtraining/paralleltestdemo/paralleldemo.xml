@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="parallel test demo suite" parallel="tests" thread-count="3">
+
+<test name="test with chrome">
+<parameter name="browser" value="chrome"></parameter>
+<classes>
+<class name="net.timeandtraining.paralleltestdemo.ProfileTests"></class>
+</classes>
+</test>
+
+
+<test name="test with internet explorer">
+<parameter name="browser" value="internetexplorer"></parameter>
+<classes>
+<class name="net.timeandtraining.paralleltestdemo.ProfileTests"></class>
+</classes>
+</test>
+
+<test name="test with internet explorer">
+<parameter name="browser" value="internetexplorer"></parameter>
+<classes>
+<class name="net.timeandtraining.paralleltestdemo.ProfileTests"></class>
+</classes>
+</test>
+
+<test name="test with internet explorer">
+<parameter name="browser" value="internetexplorer"></parameter>
+<classes>
+<class name="net.timeandtraining.paralleltestdemo.ProfileTests"></class>
+</classes>
+</test>
+
+
+
+
+
+
+
+</suite>

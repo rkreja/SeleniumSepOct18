@@ -18,16 +18,32 @@ public class TestBase {
 	@Parameters({"browser"})
 	public void init(@Optional("chrome") String browser) {
 		
-		if(browser.equalsIgnoreCase("chrome")) {
+		
+		switch (browser) {
+		case "chrome":
+			System.setProperty("webdriver.chrome.driver", "lib\\chromedriver-windows-32bit.exe");
+			driver = new ChromeDriver();
+			break;
+			
+		case "internetexplorer":
+			System.setProperty("webdriver.ie.driver", "lib\\internetexplorerdriver-windows-32bit.exe");
+			driver = new InternetExplorerDriver();
+			break;
+
+		default:
+			System.setProperty("webdriver.chrome.driver", "lib\\chromedriver-windows-32bit.exe");
+			driver = new ChromeDriver();
+			break;
+		}
+		
+	
+		/*if(browser.equalsIgnoreCase("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "lib\\chromedriver-windows-32bit.exe");
 			driver = new ChromeDriver();	
 		}else if(browser.equalsIgnoreCase("internetexplorer")) {
 			System.setProperty("webdriver.ie.driver", "lib\\internetexplorerdriver-windows-32bit.exe");
 			driver = new InternetExplorerDriver();
-		}
-		
-			
-		
+		}*/
 		
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
 		driver.manage().window().maximize();

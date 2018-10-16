@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="suite1">
+<test name="set1">
+<parameter name="urlForTest" value="http://www.cnn.com"></parameter>
+
+		
+		<classes>
+		<class name="com.automationpractice.login.DataProviderDemo"></class>
+		</classes>
+</test>
+</suite>
