@@ -15,6 +15,7 @@ public class LoginTests extends TestBase{
     	
     	UI ui = new UI(driver);
     	
+    	
 //		Go to http://www.automationpractice.com
 //		driver.get("http://www.automationpractice.com");
 		ui.openUrl("http://www.automationpractice.com");
