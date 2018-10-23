@@ -2,9 +2,8 @@ package net.timeandtraining;
 
 import java.util.List;
 
-import com.rkreja.EmailClient;
 import com.rkreja.Gmail;
-import com.rkreja.Util;
+
 
 public class GmailDemo {
 
@@ -16,6 +15,8 @@ public class GmailDemo {
 		
 //		List<String> s=gmail.get_link_from_email("qa.diamonds@gmail.com");
 //		System.out.println(s.get(0));
+		
+		
 		
 		String s=gmail.get_most_recent_email();
 		System.out.println(s.contains("timeandtraining"));

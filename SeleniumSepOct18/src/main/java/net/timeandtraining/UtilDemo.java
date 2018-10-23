@@ -7,7 +7,7 @@ public class UtilDemo {
 	public static void main(String[] args) {
 		
 		Util util = new Util();
-		System.out.println(util.isNumeric("1545454"));
+		System.out.println(util.getTodaysDate());
 		
 
 	}

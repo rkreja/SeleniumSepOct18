@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="39007" started-at="2018-10-19T02:59:19Z" finished-at="2018-10-19T02:59:58Z">
+  <suite name="Default suite" duration-ms="8573" started-at="2018-10-23T03:13:58Z" finished-at="2018-10-23T03:14:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="39007" started-at="2018-10-19T02:59:19Z" finished-at="2018-10-19T02:59:58Z">
-      <class name="net.timeandtraining.AutoITDemo">
-        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:net.timeandtraining.AutoITDemo@481a996b]" name="init" is-config="true" duration-ms="4847" started-at="2018-10-19T02:59:19Z" finished-at="2018-10-19T02:59:24Z">
+    <test name="Default test" duration-ms="8573" started-at="2018-10-23T03:13:58Z" finished-at="2018-10-23T03:14:07Z">
+      <class name="com.automationpractice.login.LoginTestsWithPageFactory">
+        <test-method status="PASS" signature="init(java.lang.String)[pri:0, instance:com.automationpractice.login.LoginTestsWithPageFactory@7d9d1a19]" name="init" is-config="true" duration-ms="4330" started-at="2018-10-23T03:13:58Z" finished-at="2018-10-23T03:14:03Z">
           <params>
             <param index="0">
               <value>
@@ -18,15 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="fileupload()[pri:0, instance:net.timeandtraining.AutoITDemo@481a996b]" name="fileupload" duration-ms="34033" started-at="2018-10-19T02:59:24Z" finished-at="2018-10-19T02:59:58Z">
+        <test-method status="PASS" signature="initPages()[pri:0, instance:com.automationpractice.login.LoginTestsWithPageFactory@7d9d1a19]" name="initPages" is-config="true" duration-ms="31" started-at="2018-10-23T03:14:03Z" finished-at="2018-10-23T03:14:03Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- fileupload -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:net.timeandtraining.AutoITDemo@481a996b]" name="closeBrowser" is-config="true" duration-ms="87" started-at="2018-10-19T02:59:58Z" finished-at="2018-10-19T02:59:58Z">
+        </test-method> <!-- initPages -->
+        <test-method status="PASS" signature="Login_with_invalid_userid_with_ui()[pri:0, instance:com.automationpractice.login.LoginTestsWithPageFactory@7d9d1a19]" name="Login_with_invalid_userid_with_ui" duration-ms="4097" started-at="2018-10-23T03:14:03Z" description="detail description" finished-at="2018-10-23T03:14:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login_with_invalid_userid_with_ui -->
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:com.automationpractice.login.LoginTestsWithPageFactory@7d9d1a19]" name="closeBrowser" is-config="true" duration-ms="83" started-at="2018-10-23T03:14:07Z" finished-at="2018-10-23T03:14:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- net.timeandtraining.AutoITDemo -->
+      </class> <!-- com.automationpractice.login.LoginTestsWithPageFactory -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
