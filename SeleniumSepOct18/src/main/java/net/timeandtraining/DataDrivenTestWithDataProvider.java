@@ -59,7 +59,6 @@ public class DataDrivenTestWithDataProvider{
 		Excel excel = new Excel("C:\\Users\\rkreja\\Desktop\\SeleniumSepOct18Batch\\testdata.xlsx", "Sheet1");
 		
 		
-		
 		Object[][] data = new Object[excel.rowCount()][1];
 		
 		List<String> records=excel.getAllRowValuesByColumn(2);

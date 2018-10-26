@@ -1,7 +1,6 @@
 package net.timeandtraining;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.annotations.Test;
 
@@ -16,7 +15,6 @@ public class DriverSwitchDemo extends TestBase{
 		String browser1=driver.getWindowHandle();
 		driver.get("http://www.google.com");
 		
-		driver = new InternetExplorerDriver();
 		
 		String browser2=driver.getWindowHandle();
 		driver.get("https://www.cnn.com/");

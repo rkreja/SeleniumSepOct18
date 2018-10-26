@@ -37,6 +37,10 @@ public class LoginTests extends TestBase{
 //		Verify error message displayed 'Password is required.'
 		String text2=driver.findElement(By.xpath("//li[parent::ol]")).getText();
 		Assert.assertEquals(text2, "Password is required.");
+		
+		driver.findElement(By.cssSelector("a"));
+			
+		
 
 	}
     
@@ -45,8 +49,11 @@ public class LoginTests extends TestBase{
  	public void Login_with_invalid_userid() {
 //		Go to http://www.automationpractice.com
 		driver.get("http://www.automationpractice.com");
+		
 //		Click Sign in button from top right corner of the page
 		driver.findElement(By.className("login")).click();
+		
+		
 //		Enter invalid email address 'myunknowxaad@mailinator.com' in email address text field of right side
 		driver.findElement(By.id("email")).sendKeys("myunknowxaad@mailinator.com");
 //		Click Sign in button
@@ -55,8 +62,15 @@ public class LoginTests extends TestBase{
 		String text1=driver.findElement(By.xpath("//p[text()='There is 1 error']")).getText();
 		Assert.assertEquals(text1, "There is 1 error");
 //		Verify error message displayed 'Password is required.'
-		String text2=driver.findElement(By.xpath("//li[parent::ol]")).getText();
-		Assert.assertEquals(text2, "Password is required.");
+		String text2=driver.findElement(By.xpath("//sli[parent::ol]")).getText();
+//		
+//		if(text2.equals("Password is required.Q")) {
+//			reporter.pass("error message displayed 'Password is required.'");
+//		}else {
+//			reporter.fail("error message did not display 'Password is required.'");
+//		}
+		Assert.assertEquals(text2, "Password is required");
+		
 
 	}
     @Test

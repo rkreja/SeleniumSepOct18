@@ -2,20 +2,21 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="Smoke Test Suite">
 	<test name="Testing major features">
-		
+		<parameter name="validuserid" value="abc213@mailinator.com"></parameter>
+		<parameter name="validpassword" value="abc1234"></parameter>		
 		<classes>
 				<class name="com.automationpractice.login.LoginTests">
 					<methods>
 					<include name="Login_with_valid_userid_and_password"></include>
 					</methods>
 				</class>
-				
+				<!-- 
 				<class name="com.automationpractice.registration.RegistrationTests">
 				<methods>
 				<include name="Register_a_new_account_in_automationpractice_com"></include>
 				</methods>
 				</class>
-				
+				 -->
 				
 				<class name="com.automationpractice.other.OtherTests">
 				<methods>
